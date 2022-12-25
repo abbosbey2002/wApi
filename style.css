@@ -1,17 +1,20 @@
 body{
+   
+    background: url(download.jpg) no-repeat center;
+    background-size: cover;
+}
+.contain{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url(download.jpg) no-repeat center;
-    background-size: cover;
-    
+    height: 100vh;
 }
 .box{
-    border: 1px solid red;
-    width: 414px;
+    border: 1px solid white;
+    max-width: 500px;
     margin: auto;
-    height: 896px;
-    /* margin-top: 5%; */
+    height: 80vh;
+    margin: 5%;
     /* background:; */
     border-top-left-radius: 30px;
     border-top-right-radius: 15px;
