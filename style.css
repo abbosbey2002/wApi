@@ -3,70 +3,145 @@ body{
     background: url(download.jpg) no-repeat center;
     background-size: cover;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .contain{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .box{
     border: 1px solid white;
-    max-width: 500px;
-    margin: auto;
-    height: 80vh;
-    margin: 5%;
-    /* background:; */
-    border-top-left-radius: 30px;
-    border-top-right-radius: 15px;
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     position: relative;
-    background: url(1131390.jpg ) no-repeat;
+    /* background: url(1131390.jpg ) no-repeat; */
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 80%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .city{
     font-size: 25px;
     text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
     margin-left: 20px;
     margin-top: 70px;
+
+    filter: sepia(10px);
+    background: rgba(255,255,255, .7);
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 20px white;
+    margin: 10px
+    
+
 }
 .temp{
     font-size: 80px;
     margin-left:15px ;
+
+    filter: sepia(10px);
+    background: rgba(255,255,255, .7);
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 20px white;
+    margin: 10px
 }
 .hi_low{
-    position: absolute;
-    left: 50%;
-    bottom: 5%;
-    transform: translate(-50%, -50%);
     font-size: 34px;
-    color: white;
-width: 60%;
+
+filter: sepia(10px);
+background: rgba(255,255,255, .7);
+padding: 15px;
+border-radius: 20px;
+border: 2px solid white;
+box-shadow: 5px 5px 20px white;
+margin: 10px
+
 }
 .search_box{
-    position: absolute;
-    left: 50%;
-    bottom: 120px;
-    transform: translate(-50%,-50%);
+
     font-size: 24px;
     border: 0px solid;
     border-bottom: 2px solid red;
-    margin: 10px;
-    text-align: center;
-    background: rgba(0,0,0,0.5);
-    color: white;
+    background: rgba(255,255,255, .5);
+    filter: opacity(5px);
+    color: black;
+    padding: 20px;
 }
 .search_box:focus{
     outline: none;
 }
 .date{
-    font-size: 25px;
+    font-size: 17px;
     position: absolute;
-    top: 120px;
-    right: -10px;
-    transform: rotate(-90deg);
+    top: 10px;
+    right: 10px;
+    transform: rotate(-90deg) translate(-50%, 100%);
+
+    filter: sepia(10px);
+    background: rgba(255,255,255, .7);
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 20px white;
+    margin: 10px
 }
 .weather{
     font-size: 50px;
-    margin: 10px 15px;
+
+    filter: sepia(10px);
+    background: rgba(255,255,255, .7);
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 20px white;
+    margin: 10px
+}
+
+@media screen and (max-width: 380px) {
+    .box{
+        width: 98%;
+        padding: 5px;
+    }
+    .contain{
+        width: 100%;
+    }
+    .city{
+        font-size: 20px;
+    }
+    .temp{
+        font-size: 70%;
+        padding: 10px;
+    }
+    .hi_low{
+        font-size: 70%;
+        padding: 10px;
+    }
+    .search_box{
+        width: 100%;
+        font-size: 70%;
+        padding: 15px;
+    }
+    .date{
+        font-size: 70%;
+        padding: 10px;
+    }
+    .weather{
+        font-size: 70%;
+        padding: 10px;
+    }
 }
